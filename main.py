@@ -8,7 +8,7 @@ numbers = list(map(int, input('Enter 10 numbers').split()))
 average = float(sum(numbers)/len(numbers))
 distance = []
 for i in range(len(numbers)):
-    dist = (abs(average - i))
+    dist = (abs(numbers[i] - average))
     distance.append(dist)
 
 for dist in distance:
